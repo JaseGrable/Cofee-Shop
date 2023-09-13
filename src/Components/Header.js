@@ -1,25 +1,18 @@
-import PropTypes from 'prop-types';
-import Button from './Button';
+import React from "react";
+import Button from "./Button";
 
-const Header = ({ title, onAdd, showAdd }) => {
+function Header(props){
     
   return (
-    <header className="header">
-        <h1>{title}</h1>
-        <Button 
-        color={showAdd ? 'red' : 'green'} 
-        text={showAdd ? 'Close' : 'Add'} 
-        onClick={onAdd} />
-    </header>
-  )
+    
+      <header className="header">
+        <h1>Cafe Zamora Shop</h1>
+        <Button className="btn-black btn" onClick={props.onAddButtonClick} label={props.buttonText} />
+      </header>
+      
+      
+    
+  );
 }
 
-Header.defaultProps = {
-    title: 'Coffee Shop',
-}
-
-Header.propTypes = {
-    title: PropTypes.string.isRequired,
-}
-
-export default Header
+export default Header;

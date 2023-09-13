@@ -11,9 +11,7 @@ function Coffee(props){
         <p><em>{props.roast} roast</em></p>
         <p><em>{props.price} per pound</em></p>
         <p><em>{props.available} pounds available</em></p>
-        <button onClick={() => props.whenBuyClicked(props.id)}>Buy</button>
-        <button onClick={() => props.whenEditClicked(props.id)}>Update</button>
-        <button onClick={() => props.whenDeleteClicked(props.id)}>Delete</button>
+    
       <hr/>
       </div>
     </React.Fragment>

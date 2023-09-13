@@ -9,11 +9,12 @@ function CoffeeDetail(props){
             <h3>{coffee.name} - <em>{coffee.origin}</em></h3>
             <p>{coffee.description}</p>
             <p><em>{coffee.roast} roast</em></p>
-            <p><em>{coffee.price} per pound</em></p>
+            <p><em>${coffee.price} per pound</em></p>
             <p><em>{coffee.available} pounds available</em></p>
 
             <button onClick={ props.onClickingEdit }>Edit</button> 
             <button onClick={ props.onCoffeeSale }>Sell</button> 
+            <button onClick= { props.onCoffeeRestock }>Restock</button>
             <button onClick={()=> onClickingDelete(coffee.id) }>Delete</button>
             <hr/>
         </React.Fragment>
