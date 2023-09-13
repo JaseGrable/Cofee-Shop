@@ -18,6 +18,7 @@ class CoffeeControl extends React.Component {
             {
               name: "Cinnamon Roast",
               origin: "Colombia",
+              description: " ",
               roast: "Cinnamon Roast",
               price: 8.99,
               available: 130,
@@ -26,6 +27,7 @@ class CoffeeControl extends React.Component {
             {
               name: "Blonde roast",
               origin: "Italy",
+              description: " ",
               roast: "Blonde Roast",
               price: 9.99,
               available: 90,
@@ -33,6 +35,7 @@ class CoffeeControl extends React.Component {
             },
             {
               name: "Breakfast Roast",
+              description: " ",
               origin: "Costa Rica",
               roast: "Breakfast roast",
               price: 7.99,
@@ -41,6 +44,7 @@ class CoffeeControl extends React.Component {
             },
             {
               name: "Espresso roast",
+              description: " ",
               origin: "Brazil",
               roast: "Espresso roast",
               price: 10.99,
@@ -49,6 +53,7 @@ class CoffeeControl extends React.Component {
             },
             {
               name: "French roast",
+              description: " ",
               origin: "Ethiopia",
               roast: "French roast",
               price: 11.99,
@@ -78,7 +83,7 @@ class CoffeeControl extends React.Component {
     this.setState({mainCoffeeList: newMainCoffeeList, formVisibleOnPage: false });
   }
 
-  handleChangingSElectedCoffee = (id) => { 
+  handleChangingSelectedCoffee = (id) => { 
     const selectedCoffee = this.state.mainCoffeeList.filter(coffee => coffee.id === id)[0];
     this.setState({selectedCoffee: selectedCoffee});
 }
