@@ -17,11 +17,15 @@ function EditCoffeeForm(props) {
         });
       }
     return ( 
+        
         <React.Fragment>
-      <ReusableForm 
-        formSubmissionHandler={handleEditCoffeeFormSubmission} 
-        buttonText="Update Coffee" />
-    </React.Fragment>
+            <div className="edit-coffee-form">
+        <ReusableForm 
+            formSubmissionHandler={handleEditCoffeeFormSubmission} 
+            buttonText="Update Coffee" />
+           </div> 
+        </React.Fragment>
+        
     );
 }
 export default EditCoffeeForm;

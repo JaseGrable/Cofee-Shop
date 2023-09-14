@@ -3,15 +3,19 @@ import Coffee from "./Coffee";
 import PropTypes from "prop-types";
 
 function CoffeeList(props){
-    if (!props.coffeeList || !Array.isArray(props.coffeeList)) {
-        return <div>No coffee available.</div>;
+    //Error handling
+    if (!Array.isArray(props.coffeeList) || props.coffeeList.length === 0) {
+        return <div>
+                    <h3>No Coffee Available.</h3>
+                </div>
     }
-    return (
+      
+      
+  return (
     <React.Fragment>
-        <hr/>
         {props.coffeeList.map((coffee) =>
-        <Coffee 
-            whenCoffeeClicked = { props.whenCoffeeClicked}
+          <Coffee 
+            whenCoffeeClicked = { props.onCoffeeSelection }
             name={coffee.name}
             origin={coffee.origin}
             description={coffee.description}
@@ -21,12 +25,13 @@ function CoffeeList(props){
             id={coffee.id}
             key={coffee.id}/>
         )}
-    </React.Fragment>
-);
+        <br />
+      </React.Fragment>
+  );
 }
 CoffeeList.propTypes = {
-coffeeList: PropTypes.array, 
-onCoffeeSelection: PropTypes.func
+  coffeeList: PropTypes.array, 
+  onCoffeeSelection: PropTypes.func
 };
 
 export default CoffeeList;

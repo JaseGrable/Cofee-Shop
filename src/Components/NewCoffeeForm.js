@@ -4,7 +4,7 @@ import { v4 } from 'uuid';
 import ReusableForm from "./ReusableForm";
 
 function NewCoffeeForm(props){
-
+  
   function handleNewCoffeeFormSubmission(event) {
     event.preventDefault();
     props.onNewCoffeeCreation({
