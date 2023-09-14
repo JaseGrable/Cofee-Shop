@@ -13,7 +13,7 @@
 
 ## Description
 
-This is a React web application featuring full CRUD functionality that tracks the inventory of coffee beans for a local shop. When running the application, a static list of beans is displayed as well as an option to add a new bean type. From the starting page, the user can click on a type of bean, and more details are displayed. The user will also have the option to edit or delete the bean info entirely. When clicking "Buy" the bean count is decremented by 1 pound. When clicking "Restock" the bean count is incremented by 1 pound.
+This is a React web application featuring full CRUD functionality that tracks the inventory of coffee beans for a local shop. When running the application, a static list of beans is displayed as well as an option to add a new bean type. From the starting page, the user can click on a type of bean, and more details are displayed. The user will also have the option to edit or delete the bean info entirely.
 
 ## Component Diagram
 
