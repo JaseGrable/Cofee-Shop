@@ -16,49 +16,49 @@ class CoffeeControl extends React.Component {
         editing: false,
         mainCoffeeList: [
             {
-              name: "Morning Bliss",
-              origin: "Colombia",
-              description: "A medium roast coffee from Colombia that delivers a smooth and energizing start to your day.",
-              roast: "Medium",
-              price: 8.99,
-              available: 130,
-              id: v4()
+                name: "Dark Roast 12oz Ground* For Coffee Maker",
+                origin: "Guatemala",
+                description: "Coffee Directly sourced from the Mountains of El Bosque, Santa Cruz Naranjo, Santa Rosa, Guatemala.",
+                roast: "Dark",
+                price: 8.99,
+                available: 130,
+                id: v4()
             },
             {
-              name: "Espresso Delight",
-              origin: "Italy",
-              description:"Indulge in the bold and rich flavors of Italy with this dark roast espresso that's perfect for espresso lovers.",
-              roast: "Dark",
-              price: 9.99,
-              available: 90,
-              id: v4()
+                name: "Dark Roast 12oz Whole Beans",
+                origin: "Guatemala",
+                description:"Coffee Directly sourced from the Mountains of El Bosque, Santa Cruz Naranjo, Santa Rosa, Guatemala.",
+                roast: "Dark",
+                price: 9.99,
+                available: 90,
+                id: v4()
             },
             {
-              name: "Tropical Sunrise",
-              origin: "Costa Rica",
-              description: "Experience the light and fruity notes of Costa Rican coffee, reminiscent of a tropical sunrise in a cup.",
-              roast: "Light",
-              price: 7.99,
-              available: 50,
-              id: v4()
+                name: "Medium Roast 12oz Ground* For Coffee Maker",
+                origin: "Guatemala",
+                description: "Coffee Directly sourced from the Mountains of El Bosque, Santa Cruz Naranjo, Santa Rosa, Guatemala",
+                roast: "Medium",
+                price: 7.99,
+                available: 50,
+                id: v4()
             },
             {
-              name: "Caramel Macchiato",
-              origin: "Brazil",
-              description: "Brazilian medium roast coffee infused with creamy caramel flavors, offering a delightful and sweet coffee experience.",
-              roast: "Medium",
-              price: 10.99,
-              available: 25,
-              id: v4()
+                name: "Medium Roast 12oz Whole Beans",
+                origin: "Guatemala",
+                description: "Coffee Directly sourced from the Mountains of El Bosque, Santa Cruz Naranjo, Santa Rosa, Guatemala",
+                roast: "Medium",
+                price: 10.99,
+                available: 25,
+                id: v4()
             },
             {
-              name: "Mocha Madness",
-              origin: "Ethiopia",
-              description:"Dive into the intense and chocolaty depths of Ethiopian dark roast coffee, a true delight for chocolate and coffee enthusiasts alike.",
-              roast: "Dark",
-              price: 11.99,
-              available: 10,
-              id: v4()
+                name: "Strong Dark Roast 12oz Whole Bean",
+                origin: "Guatemala",
+                description:"Coffee Directly sourced from the Mountains of El Bosque, Santa Cruz Naranjo, Santa Rosa, Guatemala",
+                roast: "Dark",
+                price: 11.99,
+                available: 10,
+                id: v4()
             }
           ]
     };
