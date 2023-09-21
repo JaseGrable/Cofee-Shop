@@ -7,16 +7,19 @@ function NewCoffeeForm(props){
   
   function handleNewCoffeeFormSubmission(event) {
     event.preventDefault();
+    const price = parseFloat(event.target.price.value); // Convert the price to a number
+  
     props.onNewCoffeeCreation({
-        name: event.target.name.value,
-        origin: event.target.origin.value,
-        description: event.target.description.value,
-        roast: event.target.roast.value,
-        price: event.target.price.value,
-        available: event.target.available.value, 
+      name: event.target.name.value,
+      origin: event.target.origin.value,
+      description: event.target.description.value,
+      roast: event.target.roast.value,
+      price: price, // Pass the price as a number
+      available: event.target.available.value, 
       id: v4()
     });
   }
+  
   return (
     <React.Fragment>
       <ReusableForm 
