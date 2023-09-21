@@ -17,7 +17,7 @@ This is a React web application featuring full CRUD functionality that tracks th
 
 ## Component Diagram
 
-![diagram](public/coffe-shop-diagram.drawio.png)
+![diagram](coffee-shop-diagram.drawio.png)
 
 ## Setup/Installation Requirements
 
